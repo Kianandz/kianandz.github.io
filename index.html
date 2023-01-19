@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/e412936652.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="home">
+        <video class="bg" autoplay loop muted>
+            <source src="assets/img/background.mp4" type="video/mp4">
+            <script>
+                var vid = document.querySelector(".bg");
+                    vid.playbackRate = 2;
+            </script>
+        </video>
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#profile" class="normal">Profile</a></li>
+                    <li><a href="#media" class="normal">Media</a></li>
+                    <!-- <li><a href="#" class="danger">Logout</a></li> -->
+                </ul>
+            </nav>
+            <div class="center-text">
+                <h3 class="normal">Kianandz</h3>
+                <i class="normal">Just an NPC</i>
+                <div class="link-container">
+                    <a href="#" class="normal"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="normal"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="normal"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h3 class="title-profile">Profil</h3>
+            <p class="sub-title">Lorem, ipsum dolor.</p>
+            <div class="profile-container" id="profile">
+                <div class="foto-box">
+                    <img src="assets/img/example.jpg" alt="">
+                </div>
+                <div class="info-box">
+                    <div class="box">
+                        <i class="fas fa-user"></i>
+                        <h3>Name :</h3>
+                        <p>M Nanda Malik</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-calendar"></i>
+                        <h3>Date of birth :</h3>
+                        <p>25 August 2005</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-map-marker"></i>
+                        <h3>Address :</h3>
+                        <p>Jawa timur</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email :</h3>
+                        <p>Kianandz@my.id</p>
+                    </div>
+                </div>
+            </div>
+            <div class="desk-container">
+                <h3>About Me</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ullam nisi sunt enim alias possimus pariatur incidunt blanditiis temporibus, est consequuntur et exercitationem voluptate reiciendis, tenetur expedita beatae. Soluta, illum!</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h3 class="title-profile">Video</h3>
+            <div class="vid" id="media">
+                <div class="video"><video muted src="assets/video/Outside.mp4" class="prev"></video></div>
+                <div class="video"><video muted src="assets/video/play.mp4" class="prev"></video></div>
+                <div class="video"><video muted src="assets/video/Sinon.mp4" class="prev"></video></div>
+                <div class="video"><video muted src="assets/video/Outside.mp4" class="prev"></video></div>
+                <div class="video"><video muted src="assets/video/play.mp4" class="prev"></video></div>
+                <div class="video"><video muted src="assets/video/Sinon.mp4" class="prev"></video></div>
+                <div class="video"><video muted src="assets/video/Outside.mp4" class="prev"></video></div>
+                <div class="video"><video muted src="assets/video/play.mp4" class="prev"></video></div>
+                <div class="video"><video muted src="assets/video/Sinon.mp4" class="prev"></video></div>
+                <!-- <script>
+                    document.ready(function() {
+                        document.querySelector('.prev').on("mouseover", function(event) {
+                            this.play(true);
+                        })
+                    }).on("mouseout", function(event) {
+                        this.pause(true);
+                    })
+                    
+                </script> -->
+            </div>
+            <div class="pop-up-video">
+                <video controls muted="true" id="vid-pop-up">
+                    <source src="assets/video/Outside.mp4" type="video/mp4">
+                </video>
+                <span class="exit-pop-up">&times</span>
+                <script>
+                    document.querySelectorAll('.vid video').forEach(vid =>{
+                    vid.onclick = () =>{
+                        document.querySelector('.pop-up-video').style.display = 'flex';
+                        document.querySelector('.pop-up-video video').src = vid.getAttribute('src');
+                        document.getElementById("vid-pop-up").muted = false;
+                        }
+                    });
+                    document.querySelector('.pop-up-video span').onclick = () =>{
+                        document.querySelector('.pop-up-video').style.display = 'none';
+                        document.getElementById("vid-pop-up").muted = true;
+                    }
+                </script>
+            </div>
+            <h3 class="title-profile">Image</h3>
+            <div class="img">
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+                <div class="image"><img src="assets/img/img1.jpg" alt=""></div>
+            </div>
+            <div class="pop-up-img">
+                <div class="pop-up-img-container">
+                    <img src="assets/img/img1.jpg" alt="">
+                </div>
+                <span class="exit-pop-up">&times</span>
+                <script>
+                    document.querySelectorAll('.img img').forEach(img =>{
+                    img.onclick = () =>{
+                        document.querySelector('.pop-up-img').style.display = 'flex';
+                        document.querySelector('.pop-up-img img').src = img.getAttribute('src');
+                        // document.getElementById("vid-pop-up").muted = false;
+                        }
+                    });
+                    document.querySelector('.pop-up-img span').onclick = () =>{
+                        document.querySelector('.pop-up-img').style.display = 'none';
+                        // document.getElementById("vid-pop-up").muted = true;
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="end">
+                <h3 class="nomral">END</h3>
+                <a href="#home" class="normal">Back To Home</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        
+    </script>
+</body>
+</html>
