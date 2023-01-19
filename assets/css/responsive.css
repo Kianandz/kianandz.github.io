@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    .foto-box {
+        height: 250px;
+    }
+}
+
+@media (max-width: 550px) {
+    .navbar {
+        font-size: 14px;
+    }
+    .center-text h3 {
+        font-size: 38px;
+    }
+    .foto-box {
+        width: 300px;
+    }
+    .info-box {
+        min-width: 360px;
+        max-width: 500px;
+        height: 900px;
+    }
+    .box {
+        margin: auto;
+    }
+}
