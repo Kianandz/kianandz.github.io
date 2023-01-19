@@ -18,11 +18,7 @@
         width: 300px;
     }
     .info-box {
-        min-width: 360px;
-        max-width: 500px;
+        width: 80%;
         height: 900px;
-    }
-    .box {
-        margin: auto;
     }
 }
